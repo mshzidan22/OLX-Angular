@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="ad" *ngFor="let ad of ads">
+
+        <app-home-card [ad]="ad"></app-home-card>
+    </div>
+</div>
+
+<div class="noAds" *ngIf="ads.length < 1">
+    <span class="material-icons icon">
+        star
+        </span>
+    <h2>{{"fav.message" |translate}}</h2>
+</div>

@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+    // margin-bottom: 100px;
+}
+
+.noAds {
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    justify-items: center;
+    .icon {
+        font-size: 150px;
+        color: #EAEAEA;
+    }
+}

@@ -1,0 +1,53 @@
+<div class="imgContainer">
+    <img mat-card-image src={{getImgs()[0]}} onerror="this.src='../../../assets/notFound.png';" alt="{{'adInfo.alt' | translate}}">
+</div>
+<div class="container">
+    <div class="fav">
+        <span #favIcon class="material-icons star" (click)="addToFav()">
+            star
+                </span> {{'adInfo.fav' | translate}}
+    </div>
+    <div class="report">
+        <span class="material-icons">
+            report_problem
+            </span> <span>{{'adInfo.report' | translate}} </span>
+    </div>
+
+    <div class="cond">
+        <span class="a">{{'adInfo.condition' | translate}}</span>
+
+        <span class="b">{{ad.condition}}</span>
+    </div>
+    <div class="type">
+        <span class="a">{{'adInfo.brand' | translate}}</span>
+        <span class="b">{{ad.brand}}</span>
+    </div>
+    <div class="hr1">
+        <hr>
+    </div>
+    <div class="hr2">
+        <hr>
+    </div>
+</div>
+<br>
+
+<div class="content">
+
+    <p>{{ad.description}} </p>
+</div>
+
+<div class="imgContainer" *ngFor="let img of getImgs()">
+    <img mat-card-image src={{img}} alt="{{'adInfo.alt' | translate}}">
+</div>
+
+<div class="back">
+    <button>  <span class="material-icons" routerLink = "../..">
+        keyboard_backspace
+        </span></button>
+</div>
+<div class="hr">
+    <hr>
+</div>
+
+
+<p> {{'adInfo.views' | translate}} : {{ad.views}}</p>

@@ -1,0 +1,53 @@
+<div class="fixed">
+    <div class="container">
+
+
+
+        <div class="left">
+            <img src="/assets/olx.png" alt="not found" [routerLink]="['/home']">
+            <div class="lang">
+                <button mat-button (click)="useLanguage('ar')" [disabled]="langChanged"> عربي </button> |
+                <button mat-button (click)="useLanguage('en')" [disabled]="!langChanged"> English </button>
+            </div>
+        </div>
+
+
+
+        <div class="right">
+            <div class="help">
+                <button mat-raised-button> {{'nav.help' | translate}} </button>
+            </div>
+            <div class="account">
+
+                <button mat-raised-button *ngIf="!username" [routerLink]="['/login']"> <span class="material-icons">
+                person
+            </span>
+           <span translate> nav.myAccount </span>
+        </button>
+
+                <button mat-raised-button [matMenuTriggerFor]="account" *ngIf="username"> <span class="material-icons">
+                    person
+                </span>
+                <span *ngIf="username">{{username}}</span>
+               
+            </button>
+
+                <mat-menu #account class="menu">
+                    <button mat-menu-item [routerLink]="['/myaccount/myads']"><span class ="material-icons" >person</span>{{"nav.myAds"|translate}}</button>
+                    <button mat-menu-item [routerLink]="['/myaccount/settings']"><span class ="material-icons">settings</span>{{"nav.settings"|translate}}</button>
+                    <button mat-menu-item [routerLink]="['/myaccount/fav']"><span class ="material-icons">favorite</span>{{"nav.favorites"|translate}}</button>
+                    <button mat-menu-item (click)="logout()"><span class ="material-icons">logout</span> {{"nav.logout"|translate}}
+                </button>
+                </mat-menu>
+            </div>
+            <div class="ad" [routerLink]="['/adding']">
+                <button mat-flat-button color="warn"> <span class="material-icons" >
+                    add
+                </span>
+                {{'nav.add'|translate}}</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>

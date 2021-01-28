@@ -1,0 +1,11 @@
+.title {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 20%;
+    justify-content: center;
+}

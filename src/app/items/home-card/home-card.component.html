@@ -1,0 +1,28 @@
+<mat-card class="home-card" appBorder>
+    <div class="container">
+        <img mat-card-image src={{ad.img}} onerror="this.src='../../../assets/notFound.png';" alt="{{'home.notFound' | translate}}" style="height: 250px;">
+
+        <span #favIcon class="material-icons star" matTooltip="Add to Favourites" matTooltipPosition="left" (click)="addToFav()">
+            star
+                </span>
+
+    </div>
+    <a class="title" [routerLink]="['/ad',ad.id]" routerLinkActive="router-link-active"> {{ad.title | trancate:[30]}}</a>
+    <p class="price"> {{ad.price}} {{'home.egp' | translate}}</p>
+
+
+    <mat-card-subtitle class="subtitle">{{ad.categoryDto.categoryLv1}} >> {{ad.categoryDto.categoryLv2}}
+        <span *ngIf="ad.categoryDto.categoryLv3">
+        >> {{ad.categoryDto.categoryLv3}}</span></mat-card-subtitle>
+
+    <mat-card-footer class="footer">
+
+        {{'home.date' | translate}} :
+        <p class="time">{{ad.addedAt}}</p>
+        <div class="space"></div>
+        {{'home.location' | translate}} :
+        <p class="city">{{ad.city}}</p>
+
+    </mat-card-footer>
+
+</mat-card>

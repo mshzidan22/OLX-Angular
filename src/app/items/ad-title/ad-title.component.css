@@ -1,0 +1,12 @@
+.container {
+    padding: 3px;
+}
+
+h1 {
+    margin-bottom: 1px;
+    font-weight: 600;
+}
+
+b {
+    text-decoration: underline;
+}

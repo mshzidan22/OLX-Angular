@@ -1,0 +1,41 @@
+$backColor: #F7F7F7;
+.container {
+    background-color: $backColor;
+    margin-bottom: 30px;
+    .advancedSearch {
+        display: grid;
+        grid-template-columns: repeat(4, 15%);
+        column-gap: 15px;
+        font-size: smaller;
+        .category {
+            border: 1px solid #F7F7e0;
+            grid-column-start: 2;
+        }
+    }
+    .toggleAndSubmit {
+        display: grid;
+        grid-template-columns: 30% 20%;
+        justify-content: flex-end;
+        .sortBtns {
+            margin-top: 20px;
+            margin-left: 20px;
+            mat-button-toggle {
+                // width: 50px
+                font-size: 10px;
+                height: 30px;
+                vertical-align: middle;
+                margin-top: -15px;
+            }
+        }
+    }
+}
+
+.adsContainer {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.paginator {}

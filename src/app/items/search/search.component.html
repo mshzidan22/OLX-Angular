@@ -1,0 +1,38 @@
+<!-- <button mat-button [matMenuTriggerFor]="govs">Select Location</button>
+<mat-menu #govs>
+    <button mat-menu-item> Whole Egypt</button>
+    <button mat-menu-item *ngFor="let gov of getGovs()" [matMenuTriggerFor]="gov.name">{{gov.name}}</button>
+</mat-menu>
+<ng-template *ngFor="let gov of getGovs()">
+    <mat-menu #{{gov.name}}>
+        <button mat-menu-item>Whole {{gov.name}}</button>
+        <button mat-menu-item *ngFor="let city of getCitesIn(gov.id)"> {{city.name}} </button>
+    </mat-menu>
+</ng-template> -->
+
+<div class="container">
+    <Form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field class="title">
+            <mat-label>{{'search.search'|translate}}</mat-label>
+            <input matInput type="text" formControlName="title">
+        </mat-form-field>
+
+
+        <mat-form-field class="location">
+            <input type="text" placeholder="{{'search.selectLoc'|translate}}" matInput formControlName="loc" [matAutocomplete]="govs">
+            <mat-autocomplete #govs="matAutocomplete">
+                <mat-option *ngFor="let loc of filterdLocations | async |slice:0:10 " [value]="loc">
+                    {{loc}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <button mat-icon-button color="primary" type="submit" class="btn" *ngIf="canSubmited()">
+            <mat-icon>search</mat-icon>
+          </button>
+
+
+
+    </Form>
+</div>

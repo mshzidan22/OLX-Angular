@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  BASE_URL: 'http://127.0.0.1:8080',
+  IMG_API :'https://api.sirv.com/v2/files/upload'
 };
 
 /*

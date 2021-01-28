@@ -1,0 +1,33 @@
+    .container {
+        display: grid;
+        // border: 1px solid green;
+        width: 50%;
+        height: 50%;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        h1 {
+            text-align: center;
+        }
+        .username {
+             ::ng-deep .mat-form-field {
+                width: 400px;
+            }
+        }
+        .password {
+             ::ng-deep .mat-form-field {
+                width: 400px;
+            }
+        }
+        .btnLogin {
+            margin-bottom: 10px;
+             ::ng-deep .mat-raised-button {
+                width: 400px;
+            }
+        }
+        .btnSignUp {
+             ::ng-deep .mat-raised-button {
+                width: 400px;
+            }
+        }
+    }

@@ -1,0 +1,42 @@
+<div class="sideBar">
+    <div class="pirce">
+        <h1> {{ad.price}} {{'side.egp'|translate}} </h1>
+    </div>
+    <div class="message">
+        <button mat-raised-button> <span class="material-icons">
+                message
+            </span>{{'side.sendMessage'|translate}}</button>
+    </div>
+    <div class="phone">
+        <button mat-raised-button (click)="showPhone()">
+            <span class="material-icons"> phone </span>
+            <span *ngIf="!showPhoneClicked">01x xxx xxxx <span class="showPhone"> {{'side.showPhone'|translate}} </span> </span>
+            <span *ngIf="showPhoneClicked">{{ad.advertiserPhone}} <span class="showPhone"> {{'side.hidePhone'|translate}} </span> </span>
+
+
+        </button>
+    </div>
+
+    <div class="tips">
+        <b>{{'side.tipsTitle'|translate}}</b>
+        <ol>
+            <li> {{'side.tip1'|translate}}</li>
+            <li>
+                {{'side.tip2'|translate}}
+            </li>
+            <li>
+                {{'side.tip3'|translate}} </li>
+            <li>
+                {{'side.tip4'|translate}} </li>
+        </ol>
+    </div>
+    <div class="user">
+        <span class="material-icons face">
+            account_circle
+        </span>
+        <span class="name">
+            <h1>{{ad.advertiserName}}</h1>
+            <a href="#"></a>
+        </span>
+    </div>
+</div>

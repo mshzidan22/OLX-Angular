@@ -1,0 +1,14 @@
+.container {
+    width: 30%;
+    margin: auto;
+    padding-top: 50px;
+     ::ng-deep .mat-form-field {
+        width: 100%;
+    }
+     ::ng-deep .mat-raised-button {
+        width: 50%;
+    }
+    .btnSignUp {
+        text-align: center;
+    }
+}

@@ -1,0 +1,53 @@
+.title {
+    margin: auto;
+    width: 75%;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 60%;
+     ::ng-deep .mat-form-field {
+        width: 100%;
+    }
+    .priceBrandContainer {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+    .btn {
+        margin-bottom: 50px;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+         ::ng-deep .mat-raised-button {
+            width: 80%;
+        }
+    }
+    .imgsContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        .img {
+            position: relative;
+            .overlay {
+                position: absolute;
+                width: 80%;
+                height: 100%;
+                top: 0;
+                background: rgba($color: #ffffff, $alpha: 0.6);
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                    cursor: no-drop;
+                }
+                .text {
+                    font-size: larger;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}

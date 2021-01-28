@@ -1,0 +1,7 @@
+<app-search></app-search>
+<app-mainCategories></app-mainCategories>
+<h1>Latest Ads</h1>
+
+<div class="cardContainer">
+    <app-home-card *ngFor="let ad of homeAds" [ad]='ad'></app-home-card>
+</div>

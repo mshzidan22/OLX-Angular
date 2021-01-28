@@ -1,0 +1,48 @@
+       .container {
+           height: 80px;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           padding-left: 50px;
+           padding-right: 50px;
+           border: 1px solid #F0F0F0;
+           column-gap: 25%;
+           padding-left: 10%;
+           padding-right: 10%;
+           margin-bottom: 30px;
+           .mat-raised-button {
+               width: 100%;
+           }
+       }
+       
+       img {
+           border-radius: 50%;
+           width: 72px;
+           height: 72px;
+           &:hover {
+               cursor: pointer;
+           }
+       }
+       
+       .left {
+           display: grid;
+           grid-template-columns: 1fr 2fr 1fr;
+       }
+       
+       .right {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           column-gap: 5%;
+           justify-content: center;
+           padding-top: 5%;
+       }
+       
+       .lang {
+           margin-top: 13%;
+       }
+       
+        ::ng-deep .menu {
+           span {
+               vertical-align: middle;
+               margin-right: 10px;
+           }
+       }

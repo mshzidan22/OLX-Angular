@@ -1,0 +1,24 @@
+<div class="center">
+    <ngx-file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)" (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)" accept="image/*" multiple="true" dropZoneClassName="zone">
+        <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+            <div class="area">
+                <span class="material-icons">upload</span>
+                <p> {{"fileDrag.drag" |translate}}</p>
+                <p> {{"fileDrag.or" |translate}} </p>
+                <button type="button" mat-raised-button (click)="openFileSelector()">{{"fileDrag.browse" |translate}}</button>
+            </div>
+        </ng-template>
+    </ngx-file-drop>
+
+</div>
+<mat-progress-bar mode="indeterminate" *ngIf="!uploadIsFinished"></mat-progress-bar>
+<div class="imgs">
+
+
+
+    <span *ngFor="let item of files; let i=index">
+                <strong>{{ item.relativePath }}&nbsp;&nbsp;</strong>
+            
+            </span>
+
+</div>

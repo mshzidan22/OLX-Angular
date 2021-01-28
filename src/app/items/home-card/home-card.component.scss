@@ -1,0 +1,60 @@
+.home-card {
+    max-width: 280px;
+}
+
+.container {
+    position: relative;
+    height: 220 px;
+    .star {
+        position: absolute;
+        top: 0%;
+        left: 90%;
+        font-size: xx-large;
+        color: whitesmoke;
+        &:hover {
+            color: #168ECB;
+            cursor: pointer;
+        }
+    }
+}
+
+.title {
+    font-size: large;
+    font-weight: 500;
+}
+
+.price {
+    font-size: large;
+}
+
+.footer {
+    background-color: whitesmoke;
+    // padding-left: 3%;
+    // margin-bottom: -9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-weight: 500;
+    .space {
+        width: 10%;
+    }
+}
+
+.subtitle {
+    padding-top: 3%;
+    min-height: 60px;
+    margin-bottom: 5px;
+}
+
+.time {
+    padding-top: 1%;
+    font-size: small;
+}
+
+.city {
+    font-size: small;
+}
+
+mat-icon {
+    color: whitesmoke;
+}

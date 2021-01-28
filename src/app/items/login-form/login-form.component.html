@@ -1,0 +1,41 @@
+<div class="container">
+    <h1>{{"loginForm.logIn" |translate}}</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="username">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"loginForm.enterEmail" |translate}}</mat-label>
+                <input matInput placeholder="pat@example.com" formControlName="username" required>
+                <mat-error *ngIf="loginForm.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="password">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"loginForm.enterPass" |translate}}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+            </mat-form-field>
+
+        </div>
+
+        <div class="btnLogin">
+            <button mat-raised-button color="primary" [disabled]="!loginForm.valid">
+                {{"loginForm.login" |translate}}
+            </button>
+        </div>
+
+    </form>
+    <div class="btnSignUp">
+        <button mat-raised-button color="primary" (click)="signUp()">
+            {{"loginForm.signUp" |translate}}
+        </button>
+    </div>
+
+    <div class="success" *ngIf="loginNotSuccess">
+        {{"loginForm.incorrectEmail" |translate}}
+    </div>
+
+
+</div>

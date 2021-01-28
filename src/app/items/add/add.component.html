@@ -1,0 +1,133 @@
+<div class="title">
+    <h1>{{"add.place" |translate}}</h1>
+    <hr>
+</div>
+<div class="container">
+    <form [formGroup]='addForm' (ngSubmit)="onSubmit()">
+        <div class="title">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"add.title" |translate}}</mat-label>
+                <input #title matInput formControlName="title" required maxlength="80">
+                <mat-hint align="end">{{title.value.length}} / 80 </mat-hint>
+                <!-- <mat-error *ngIf="addForm.invalid">{{error()}}</mat-error> -->
+            </mat-form-field>
+        </div>
+        <div class="categoryContainer">
+            <div class="category">
+                <mat-form-field appearance="fill">
+                    <mat-label>{{"add.mainCat" |translate}}</mat-label>
+                    <mat-select #mainCat>
+                        <mat-option *ngFor="let cat of getMainCats()" value="{{cat.category_id}}">
+                            <span class="material-icons">{{cat.icon  }}</span>{{ cat.name}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+
+            <div class="nestedCategory">
+                <div class="category">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"add.nestedCat" |translate}}</mat-label>
+                        <mat-select matInput formControlName="categoryId" required [disabled]="!mainCat.selected">
+                            <mat-option *ngFor="let cat of getNestedCats(mainCat.value)" value="{{cat.category_id}}">{{cat.name}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="priceBrandContainer">
+
+            <div class="price">
+                <mat-form-field appearance="fill">
+                    <mat-label>{{"add.price" |translate}}</mat-label>
+                    <input matInput type="number" formControlName="price" #price required>
+                    <span matSuffix>{{"add.egp" |translate}}&nbsp;</span>
+                </mat-form-field>
+            </div>
+            <div class="brand">
+                <mat-form-field appearance="fill">
+                    <mat-label>{{"add.brand" |translate}}</mat-label>
+                    <input matInput type="text" formControlName="brand">
+                </mat-form-field>
+            </div>
+            <div class="condition">
+                <mat-form-field appearance="fill">
+                    <mat-label>{{"add.condition" |translate}}</mat-label>
+                    <mat-select matInput formControlName="condition" required>
+                        <mat-option value="Used">{{"add.used" |translate}}</mat-option>
+                        <mat-option value="New">{{"add.new" |translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="description">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"add.description" |translate}}</mat-label>
+                <textarea matInput required formControlName="description" #desc></textarea>
+                <mat-hint align="end">{{desc.value.length}} / 4092 </mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="locationContainer">
+            <div class="Govs">
+                <mat-form-field appearance="fill">
+                    <mat-label>{{"add.selectGov" |translate}}</mat-label>
+                    <mat-select #gov>
+                        <mat-option *ngFor="let gov of getGovs()" value="{{gov.id}}">{{ gov.name}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="cites">
+                <mat-form-field appearance="fill">
+                    <mat-label>{{"add.selectCity" |translate}}</mat-label>
+                    <mat-select matInput formControlName="locationId" required [disabled]="!gov.selected">
+                        <mat-option *ngFor="let city of getCites(gov.value)" value="{{city.id}}">{{city.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <h3>{{"add.userInfo" |translate}}</h3>
+        <hr>
+
+        <div class="name">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"add.name" |translate}}</mat-label>
+                <input type="text" matInput formControlName="name">
+            </mat-form-field>
+        </div>
+        <div class="phone">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"add.phone" |translate}}</mat-label>
+                <input type="text" matInput formControlName="phone">
+            </mat-form-field>
+        </div>
+        <div class="email">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"add.email" |translate}}</mat-label>
+                <input type="text" matInput formControlName="email">
+            </mat-form-field>
+        </div>
+        <hr>
+
+        <div class="imgsContainer">
+            <div class="img" *ngFor="let img of uploadedImgs">
+                <img [src]="img.slice(11,-1)" [alt]="img" *ngIf="img.length > 12" style="width:150px;height:150px;">
+                <div class="overlay" matTooltip="Click to delete the image" (click)="deleteImg(img)">
+                    <div class="text"><span class="material-icons">
+                        delete
+                        </span></div>
+                </div>
+            </div>
+        </div>
+
+        <app-file-drag #fileDrag (latestUploadedImg)="getLatestImg($event)"></app-file-drag>
+
+        <div class="btn">
+            <button mat-raised-button color="primary" [disabled]="!addForm.valid  || !fileDrag.uploadIsFinished">
+                {{"add.submit" |translate}}
+            </button>
+        </div>
+    </form>
+    {{uploadIsFinished}}
+</div>

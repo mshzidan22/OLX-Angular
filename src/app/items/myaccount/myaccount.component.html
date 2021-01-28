@@ -1,0 +1,15 @@
+<div class="adContainer" *ngFor="let userAd of userAds">
+    <app-user-ads [userAd]='userAd'></app-user-ads>
+</div>
+<div class="noAds" *ngIf="userAds.length < 1">
+    <span class="material-icons icon">
+        push_pin
+        </span>
+    <h2> {{"myaccount.message" |translate}}</h2>
+    <div class="ad" [routerLink]="['/adding']">
+        <button mat-flat-button color="warn"> <span class="material-icons" >
+            add
+        </span>
+        {{"myaccount.palce" |translate}}</button>
+    </div>
+</div>

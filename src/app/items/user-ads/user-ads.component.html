@@ -1,0 +1,49 @@
+<mat-card class="contianer" *ngIf="!isDeleted">
+
+    <div class="header">
+        <p>{{"userAds.adId" | translate}}</p>
+        <p>{{"userAds.date" | translate}}</p>
+        <p>{{"userAds.title"| translate}}</p>
+        <p>{{"userAds.price"| translate}}</p>
+        <p>{{"userAds.chat" | translate}}</p>
+    </div>
+
+
+    <div class="content">
+        <p>{{userAd.id}}</p>
+        <p>{{userAd.addedAt}}</p>
+        <b>{{userAd.title}}</b>
+        <p>{{userAd.price +" EGP"}}</p>
+        <div class="message">
+            <button mat-raised-button disabled> <mat-icon>message</mat-icon>0</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="btns">
+            <div class="preview">
+                <button mat-raised-button color="primary" (click)="preview()">{{"userAds.preview" | translate}} 
+                <mat-icon>preview</mat-icon>
+            </button>
+            </div>
+
+            <button mat-raised-button class="edit" (click)="edit()">{{"userAds.edit" | translate}}
+                <mat-icon>edit</mat-icon>
+            </button>
+
+            <div class="delete">
+                <button mat-raised-button color="warn" (click)="openDialog()">{{"userAds.delete" | translate}}
+                <mat-icon>delete</mat-icon></button>
+            </div>
+        </div>
+        <div class="views">
+            <p>
+                <mat-icon>visibility</mat-icon>{{userAd.views || 0}}</p>
+        </div>
+    </div>
+
+
+
+
+</mat-card>

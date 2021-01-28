@@ -1,0 +1,22 @@
+<div class="container">
+    <mat-expansion-panel *ngFor="let item of getParents()" hideToggle class="panel">
+        <mat-expansion-panel-header class="header">
+
+            <span class="material-icons"> {{item.icon}}</span>
+
+            <a [routerLink]="['/search']" [queryParams]="{mainCat : item.name}"> {{item.name}}</a>
+            <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+
+
+        </mat-expansion-panel-header>
+        <div class="contentContainer">
+            <div class="content" *ngFor="let child of getChildren(item.category_id)" appHighlight='#F2F2F2'>
+                <span class="material-icons">
+                    keyboard_arrow_right
+                    </span> <a [routerLink]="['/search']" [queryParams]="{nestedCat : child.name}"> {{child.name}}</a>
+            </div>
+        </div>
+    </mat-expansion-panel>
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+    <h1>{{"signUp.signUp" |translate}}</h1>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+
+        <div class="username">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"signUp.enterName" |translate}}</mat-label>
+                <input matInput formControlName="username" required>
+                <mat-error *ngIf="signUpForm.invalid">{{UserNameErrorMessages()}}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="phone">
+
+            <mat-form-field>
+                <mat-label>{{"signUp.phone" |translate}}</mat-label>
+                <span matPrefix>+20 &nbsp;</span>
+                <input matInput type="tel" matInput placeholder="101-111-1111" formControlName="phone">
+                <mat-icon matSuffix>mode_edit</mat-icon>
+                <mat-error *ngIf="signUpForm.invalid">{{phoneErrorMessages()}}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="email">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"signUp.enterEmail" |translate}}</mat-label>
+                <input matInput placeholder="pat@example.com" formControlName="email" required>
+                <mat-error *ngIf="signUpForm.invalid">{{EmailErrorMessages()}}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="password">
+            <mat-form-field appearance="fill">
+                <mat-label>{{"signUp.enterPass" |translate}}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error *ngIf="signUpForm.invalid">{{passwordErrorMessages()}}</mat-error>
+            </mat-form-field>
+
+        </div>
+        <div *ngIf="duplicateEmail">{{"signUp.duplicateEmail" |translate}}
+        </div>
+
+        <div class="btnSignUp">
+            <button mat-raised-button color="primary" [disabled]="!signUpForm.valid">
+                {{"signUp.register" |translate}}
+            </button>
+        </div>
+
+    </form>
+
+
+
+</div>

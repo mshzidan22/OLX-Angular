@@ -1,0 +1,104 @@
+<div class="container">
+
+    <div class="basicSearch">
+        <app-search #SearchComponent></app-search>
+    </div>
+
+
+    <Form [formGroup]="advancedSearchForm" (ngSubmit)="onSubmit()">
+        <div class="advancedSearch">
+            <div class="category">
+                <div class="mainCategory">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"adv.mainCat" |translate}}</mat-label>
+                        <mat-select matInput formControlName="mainCategory" #s>
+                            <mat-option *ngFor="let cat of getMainCat()" [value]="cat.name">
+                                {{cat.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <div class="nestedCategory">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"adv.nestedCat" |translate}}</mat-label>
+                        <mat-select matInput formControlName="nestedCategory">
+                            <mat-option *ngFor="let cat of getNestedCat(s.value)" [value]="cat.name">
+                                {{cat.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="price">
+                <div class="priceFrom">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"adv.priceFrom" |translate}}</mat-label>
+                        <input matInput type="number" placeholder="price From" formControlName="minPrice">
+                    </mat-form-field>
+                </div>
+                <div class="priceTo">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"adv.priceTo" |translate}}</mat-label>
+                        <input matInput type="number" placeholder="price to" formControlName="maxPrice">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="conAndBrand">
+                <div class="condtion">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"adv.condition" |translate}}</mat-label>
+                        <mat-select matInput formControlName="condtion">
+                            <mat-option value="all">{{"adv.all" |translate}}</mat-option>
+                            <mat-option value="new">{{"adv.new" |translate}}</mat-option>
+                            <mat-option value="used">{{"adv.used" |translate}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <div class="brand">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"adv.brand" |translate}}</mat-label>
+                        <input matInput type="text" placeholder="Brand" formControlName="brand">
+                    </mat-form-field>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="toggleAndSubmit">
+            <div class="sortBtns">
+                {{"adv.sortBy" |translate}} :
+
+                <mat-button-toggle-group #g value="">
+                    <mat-button-toggle value="" (change)="doSort($event)">{{"adv.mostRecent" |translate}}</mat-button-toggle>
+                    <mat-button-toggle value="price,desc" (change)="doSort($event)">{{"adv.priceHTL" |translate}}</mat-button-toggle>
+                    <mat-button-toggle value="price,asc" (change)="doSort($event)">{{"adv.priceLTH" |translate}}</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+            <div class="submitBtn">
+                <button mat-raised-button color="primary" type="submit" class="btn">
+           
+            <mat-icon>search</mat-icon>
+            {{"adv.search" |translate}}
+        </button>
+            </div>
+
+
+        </div>
+
+    </Form>
+
+
+</div>
+<div class="adsContainer" *ngIf="dataFound">
+    <app-home-card *ngFor="let ad of searchedAds._embedded.entityModels" [ad]='ad'></app-home-card>
+</div>
+<div class="paginator" *ngIf="dataFound">
+    <mat-paginator [length]="searchedAds.page.totalElements" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 50]" (page)="handlePage($event)">
+    </mat-paginator>
+</div>
