@@ -1,0 +1,1358 @@
+[{
+        "category_id": 3,
+        "name": "أجهزة الكمبيوتر - الملحقات",
+        "parent": 20
+    },
+    {
+        "category_id": 5,
+        "name": "أفلام - موسيقى",
+        "parent": 230
+    },
+    {
+        "category_id": 6,
+        "name": "أثاث منزلي - ديكور",
+        "parent": 0,
+        "icon": "home"
+    },
+    {
+        "category_id": 7,
+        "name": "معدات رياضية",
+        "parent": 230
+    },
+    {
+        "category_id": 9,
+        "name": "الهواتف المحمولة",
+        "parent": 147
+    },
+    {
+        "category_id": 10,
+        "name": "ألعاب الفيديو - وحدات التحكم",
+        "parent": 20
+    },
+    {
+        "category_id": 11,
+        "name": "الكاميرات - التصوير",
+        "parent": 20
+    },
+    {
+        "category_id": 12,
+        "name": "الكتب",
+        "parent": 230
+    },
+    {
+        "category_id": 14,
+        "name": "حيوانات أليفة - إكسسوارات",
+        "parent": 0,
+        "icon": "pets"
+    },
+    {
+        "category_id": 15,
+        "name": "اللعب",
+        "parent": 223
+    },
+    {
+        "category_id": 16,
+        "name": "قوارب - مركبة مائية",
+        "parent": 129
+    },
+    {
+        "category_id": 17,
+        "name": "تجارة - صناعية - زراعة",
+        "parent": 0,
+        "icon": "agriculture"
+    },
+    {
+        "category_id": 18,
+        "name": "أسرة - عربات - ناقلات",
+        "parent": 223
+    },
+    {
+        "category_id": 19,
+        "name": "تذاكر - قسائم",
+        "parent": 230
+    },
+    {
+        "category_id": 20,
+        "name": "إلكترونيات وأجهزة منزلية",
+        "parent": 0,
+        "icon": "electrical_services"
+    },
+    {
+        "category_id": 21,
+        "name": "الآلات الموسيقية",
+        "parent": 230
+    },
+    {
+        "category_id": 22,
+        "name": "دراجات نارية وملحقاتها",
+        "parent": 129
+    },
+    {
+        "category_id": 23,
+        "name": "سيارات للبيع",
+        "parent": 129
+    },
+    {
+        "category_id": 26,
+        "name": "هوندا",
+        "parent": 23
+    },
+    {
+        "category_id": 28,
+        "name": "ميني",
+        "parent": 23
+    },
+    {
+        "category_id": 29,
+        "name": "شيفروليه",
+        "parent": 23
+    },
+    {
+        "category_id": 30,
+        "name": "بورش",
+        "parent": 23
+    },
+    {
+        "category_id": 33,
+        "name": "مرسيدس بنز",
+        "parent": 23
+    },
+    {
+        "category_id": 34,
+        "name": "جاجار",
+        "parent": 23
+    },
+    {
+        "category_id": 35,
+        "name": "فولكس فاجن",
+        "parent": 23
+    },
+    {
+        "category_id": 36,
+        "name": "سوزوكي",
+        "parent": 23
+    },
+    {
+        "category_id": 38,
+        "name": "ألفا روميو",
+        "parent": 23
+    },
+    {
+        "category_id": 40,
+        "name": "لادا",
+        "parent": 23
+    },
+    {
+        "category_id": 42,
+        "name": "إيسوزو",
+        "parent": 23
+    },
+    {
+        "category_id": 45,
+        "name": "هيونداي",
+        "parent": 23
+    },
+    {
+        "category_id": 46,
+        "name": "نوع آخر",
+        "parent": 23
+    },
+    {
+        "category_id": 47,
+        "name": "فورد",
+        "parent": 23
+    },
+    {
+        "category_id": 48,
+        "name": "مازدا",
+        "parent": 23
+    },
+    {
+        "category_id": 53,
+        "name": "كيا",
+        "parent": 23
+    },
+    {
+        "category_id": 54,
+        "name": "الإطارات والبطاريات والزيوت والملحقات",
+        "parent": 129
+    },
+    {
+        "category_id": 55,
+        "name": "بيجو",
+        "parent": 23
+    },
+    {
+        "category_id": 56,
+        "name": "سانغ يونغ",
+        "parent": 23
+    },
+    {
+        "category_id": 57,
+        "name": "BMW",
+        "parent": 23
+    },
+    {
+        "category_id": 58,
+        "name": "فيات",
+        "parent": 23
+    },
+    {
+        "category_id": 59,
+        "name": "دودج",
+        "parent": 23
+    },
+    {
+        "category_id": 63,
+        "name": "رينو",
+        "parent": 23
+    },
+    {
+        "category_id": 64,
+        "name": "جيب",
+        "parent": 23
+    },
+    {
+        "category_id": 65,
+        "name": "تويوتا",
+        "parent": 23
+    },
+    {
+        "category_id": 66,
+        "name": "نيسان",
+        "parent": 23
+    },
+    {
+        "category_id": 68,
+        "name": "دايهاتسو",
+        "parent": 23
+    },
+    {
+        "category_id": 69,
+        "name": "فولفو",
+        "parent": 23
+    },
+    {
+        "category_id": 72,
+        "name": "كرايسلر",
+        "parent": 23
+    },
+    {
+        "category_id": 73,
+        "name": "سيتروين",
+        "parent": 23
+    },
+    {
+        "category_id": 76,
+        "name": "ميتسوبيشي",
+        "parent": 23
+    },
+    {
+        "category_id": 77,
+        "name": "لاند روفر",
+        "parent": 23
+    },
+    {
+        "category_id": 79,
+        "name": "هامر",
+        "parent": 23
+    },
+    {
+        "category_id": 81,
+        "name": "سكودا",
+        "parent": 23
+    },
+    {
+        "category_id": 83,
+        "name": "بروتون",
+        "parent": 23
+    },
+    {
+        "category_id": 84,
+        "name": "دايو",
+        "parent": 23
+    },
+    {
+        "category_id": 85,
+        "name": "المقعد",
+        "parent": 23
+    },
+    {
+        "category_id": 86,
+        "name": "سوبارو",
+        "parent": 23
+    },
+    {
+        "category_id": 87,
+        "name": "سبيرانزا",
+        "parent": 23
+    },
+    {
+        "category_id": 92,
+        "name": "أوبل",
+        "parent": 23
+    },
+    {
+        "category_id": 93,
+        "name": "أودي",
+        "parent": 23
+    },
+    {
+        "category_id": 95,
+        "name": "شقق ودوبلكس للبيع",
+        "parent": 138
+    },
+    {
+        "category_id": 97,
+        "name": "فلل للبيع",
+        "parent": 138
+    },
+    {
+        "category_id": 98,
+        "name": "المباني والأراضي",
+        "parent": 138
+    },
+    {
+        "category_id": 99,
+        "name": "عقار تجاري للبيع",
+        "parent": 138
+    },
+    {
+        "category_id": 100,
+        "name": "الوظائف",
+        "parent": 0,
+        "icon": "work"
+    },
+    {
+        "category_id": 101,
+        "name": "الإدارة والاستشارات",
+        "parent": 100
+    },
+    {
+        "category_id": 103,
+        "name": "الطب والرعاية الصحية والتمريض",
+        "parent": 100
+    },
+    {
+        "category_id": 105,
+        "name": "التسويق والعلاقات العامة",
+        "parent": 100
+    },
+    {
+        "category_id": 108,
+        "name": "الهندسة",
+        "parent": 100
+    },
+    {
+        "category_id": 109,
+        "name": "HR",
+        "parent": 100
+    },
+    {
+        "category_id": 110,
+        "name": "المبيعات",
+        "parent": 100
+    },
+    {
+        "category_id": 111,
+        "name": "وظيفة أخرى",
+        "parent": 100
+    },
+    {
+        "category_id": 112,
+        "name": "المحاسبة والمالية والمصرفية",
+        "parent": 100
+    },
+    {
+        "category_id": 117,
+        "name": "السياحة والسفر والضيافة",
+        "parent": 100
+    },
+    {
+        "category_id": 118,
+        "name": "التعليم",
+        "parent": 100
+    },
+    {
+        "category_id": 119,
+        "name": "المصممون",
+        "parent": 100
+    },
+    {
+        "category_id": 120,
+        "name": "سكرتارية",
+        "parent": 100
+    },
+    {
+        "category_id": 121,
+        "name": "IT - Telecom",
+        "parent": 100
+    },
+    {
+        "category_id": 124,
+        "name": "تجاري للإيجار",
+        "parent": 138
+    },
+    {
+        "category_id": 125,
+        "name": "فلل للايجار",
+        "parent": 138
+    },
+    {
+        "category_id": 126,
+        "name": "شقق ودوبلكس للإيجار",
+        "parent": 138
+    },
+    {
+        "category_id": 129,
+        "name": "المركبات",
+        "parent": 0,
+        "icon": "directions_car"
+    },
+    {
+        "category_id": 130,
+        "name": "الشاحنات الثقيلة والحافلات والمركبات الأخرى",
+        "parent": 129
+    },
+    {
+        "category_id": 132,
+        "name": "بريليانس",
+        "parent": 23
+    },
+    {
+        "category_id": 133,
+        "name": "BYD",
+        "parent": 23
+    },
+    {
+        "category_id": 134,
+        "name": "شيري",
+        "parent": 23
+    },
+    {
+        "category_id": 135,
+        "name": "جيلي",
+        "parent": 23
+    },
+    {
+        "category_id": 136,
+        "name": "MG",
+        "parent": 23
+    },
+    {
+        "category_id": 137,
+        "name": "Saipa",
+        "parent": 23
+    },
+    {
+        "category_id": 138,
+        "name": "عقارات",
+        "parent": 0,
+        "icon": "apartment"
+    },
+    {
+        "category_id": 139,
+        "name": "بيوت عطلات للإيجار",
+        "parent": 138
+    },
+    {
+        "category_id": 144,
+        "name": "بيوت عطلات للبيع",
+        "parent": 138
+    },
+    {
+        "category_id": 147,
+        "name": "الهواتف المحمولة والأجهزة اللوحية وملحقاتها",
+        "parent": 0,
+        "icon": "stay_primary_portrait"
+    },
+    {
+        "category_id": 148,
+        "name": "ملحقات الجوال والأجهزة اللوحية",
+        "parent": 147
+    },
+    {
+        "category_id": 154,
+        "name": "تلفزيون - صوت - فيديو",
+        "parent": 20
+    },
+    {
+        "category_id": 155,
+        "name": "التلفزيونات",
+        "parent": 154
+    },
+    {
+        "category_id": 156,
+        "name": "DVD - مسرح منزلي",
+        "parent": 154
+    },
+    {
+        "category_id": 157,
+        "name": "صوت منزلي",
+        "parent": 154
+    },
+    {
+        "category_id": 158,
+        "name": "مشغلات MP3 - صوت محمول",
+        "parent": 154
+    },
+    {
+        "category_id": 159,
+        "name": "أجهزة استقبال القنوات الفضائية",
+        "parent": 154
+    },
+    {
+        "category_id": 161,
+        "name": "الأجهزة المنزلية",
+        "parent": 20
+    },
+    {
+        "category_id": 162,
+        "name": "مكيفات ومراوح",
+        "الوالد": 161
+    },
+    {
+        "category_id": 163,
+        "name": "أجهزة منزلية أخرى",
+        "الوالد": 161
+    },
+    {
+        "category_id": 165,
+        "name": "غسالات الصحون",
+        "أقواسر ": 161
+    },
+    {
+        "category_id": 166,
+        "name": "أفران - أفران ميكروويف",
+        "الوالد": 161
+    },
+    {
+        "category_id": 167,
+        "name": "أدوات الطبخ",
+        "الوالد": 161
+    },
+    {
+        "category_id": 168,
+        "name": "ثلاجات - مجمدات",
+        "الوالد": 161
+    },
+    {
+        "category_id": 169,
+        "name": "غسالات - مجففات",
+        "الوالد": 161
+    },
+    {
+        "category_id": 170,
+        "name": "مبردات المياه والغلايات",
+        "الوالد": 161
+    },
+    {
+        "category_id": 171,
+        "name": "أجهزة التنظيف",
+        "الوالد": 161
+    },
+    {
+        "category_id": 173,
+        "name": "دفايات",
+        "الوالد": 161
+    },
+    {
+        "category_id": 174,
+        "name": "ملحقات الكمبيوتر وقطع غياره",
+        "الوالدين": 3
+    },
+    {
+        "category_id": 175,
+        "name": "أجهزة الكمبيوتر المحمولة",
+        "الوالدين": 3
+    },
+    {
+        "category_id": 176,
+        "name": "أجهزة كمبيوتر سطح المكتب",
+        "الوالدين": 3
+    },
+    {
+        "category_id": 177,
+        "name": "أجهزة لوحية",
+        "parent": 147
+    },
+    {
+        "category_id": 182,
+        "name": "أجهزة ألعاب الفيديو",
+        "parent": 10
+    },
+    {
+        "category_id": 184,
+        "name": "ألعاب الفيديو وملحقاتها",
+        "parent": 10
+    },
+    {
+        "category_id": 186,
+        "name": "مناظير - تلسكوبات",
+        "parent": 11
+    },
+    {
+        "category_id": 188,
+        "name": "كاميرات parentان",
+        "parent": 11
+    },
+    {
+        "category_id": 189,
+        "name": "ملحقات الكاميرا",
+        "parent": 11
+    },
+    {
+        "category_id": 190,
+        "name": "الكاميرات",
+        "parent": 11
+    },
+    {
+        "category_id": 196,
+        "name": "غرفة النوم",
+        "parent": 6
+    },
+    {
+        "category_id": 198,
+        "name": "حديقة - خارجية",
+        "parent": 6
+    },
+    {
+        "category_id": 201,
+        "name": "أقمشة - ستائر - سجاد",
+        "parent": 6
+    },
+    {
+        "category_id": 202,
+        "name": "ديكور المنزل",
+        "parent": 6
+    },
+    {
+        "category_id": 203,
+        "name": "أدوات الإضاءة",
+        "parent": 6
+    },
+    {
+        "category_id": 205,
+        "name": "أثاث متعدد / آخر",
+        "parent": 6
+    },
+    {
+        "category_id": 206,
+        "name": "الموضة والجمال",
+        "parent": 0,
+        "icon": "checkroom"
+    },
+    {
+        "category_id": 207,
+        "name": "النساء",
+        "parent": 206
+    },
+    {
+        "category_id": 208,
+        "name": "رجال",
+        "parent": 206
+    },
+    {
+        "category_id": 211,
+        "name": "أمتعة",
+        "parent": 230
+    },
+    {
+        "category_id": 212,
+        "name": "إكسسوارات الرجال - بيرسو",
+        "parent": 206
+    },
+    {
+        "category_id": 214,
+        "name": "إكسسوارات نسائية - مستحضرات تجميل - بيرسو",
+        "parent": 206
+    },
+    {
+        "category_id": 217,
+        "name": "القطط",
+        "parent": 14
+    },
+    {
+        "category_id": 218,
+        "name": "الكلاب",
+        "parent": 14
+    },
+    {
+        "category_id": 219,
+        "name": "طيور - حمام",
+        "parent": 14
+    },
+    {
+        "category_id": 222,
+        "name": "الحيوانات الأليفة والحيوانات الأخرى",
+        "parent": 14
+    },
+    {
+        "category_id": 223,
+        "name": "الأطفال والرضع",
+        "parent": 0,
+        "icon": "child_friendly"
+    },
+    {
+        "category_id": 224,
+        "name": "ملابس أطفال",
+        "parent": 223
+    },
+    {
+        "category_id": 226,
+        "name": "عناصر الأطفال الأخرى",
+        "parent": 223
+    },
+    {
+        "category_id": 228,
+        "name": "دراجات",
+        "parent": 230
+    },
+    {
+        "category_id": 230,
+        "name": "الكتب والرياضة والهوايات",
+        "parent": 0,
+        "icon": "fitness_center"
+    },
+    {
+        "category_id": 231,
+        "name": "التحف - المقتنيات",
+        "parent": 230
+    },
+    {
+        "category_id": 232,
+        "name": "عناصر أخرى",
+        "parent": 230
+    },
+    {
+        "category_id": 233,
+        "name": "المعدات الصناعية",
+        "parent": 17
+    },
+    {
+        "category_id": 234,
+        "name": "معدات طبية",
+        "parent": 17
+    },
+    {
+        "category_id": 235,
+        "name": "البناء",
+        "parent": 17
+    },
+    {
+        "category_id": 236,
+        "name": "معدات المطاعم",
+        "parent": 17
+    },
+    {
+        "category_id": 237,
+        "name": "مشروع كامل للبيع",
+        "parent": 17
+    },
+    {
+        "category_id": 238,
+        "name": "أنشطة تجارية وصناعية وزراعية أخرى",
+        "parent": 17
+    },
+    {
+        "category_id": 239,
+        "name": "مطبخ - أدوات مطبخ",
+        "parent": 6
+    },
+    {
+        "category_id": 240,
+        "name": "أدوات الدراسة",
+        "parent": 230
+    },
+    {
+        "category_id": 241,
+        "name": "الخدمات",
+        "parent": 0,
+        "icon": "miscellaneous_services"
+    },
+    {
+        "category_id": 242,
+        "name": "المنزل",
+        "parent": 241
+    },
+    {
+        "category_id": 243,
+        "name": "الصحة والجمال",
+        "parent": 241
+    },
+    {
+        "category_id": 244,
+        "name": "الحيوانات الأليفة",
+        "parent": 241
+    },
+    {
+        "category_id": 245,
+        "name": "المحركون",
+        "parent": 241
+    },
+    {
+        "category_id": 246,
+        "name": "الأحداث",
+        "parent": 241
+    },
+    {
+        "category_id": 247,
+        "name": "العمل",
+        "parent": 241
+    },
+    {
+        "category_id": 249,
+        "name": "خدمات أخرى",
+        "parent": 241
+    },
+    {
+        "category_id": 273,
+        "name": "سيارات للإيجار",
+        "parent": 129
+    },
+    {
+        "category_id": 299,
+        "name": "السيارة",
+        "parent": 241
+    },
+    {
+        "category_id": 300,
+        "name": "التعليم",
+        "parent": 241
+    },
+    {
+        "category_id": 319,
+        "name": "نوع آخر",
+        "parent": 369
+    },
+    {
+        "category_id": 320,
+        "name": "شانجان",
+        "parent": 23
+    },
+    {
+        "category_id": 321,
+        "name": "لانسيا",
+        "parent": 23
+    },
+    {
+        "category_id": 322,
+        "name": "سينوفا",
+        "parent": 23
+    },
+    {
+        "category_id": 323,
+        "name": "جاك",
+        "parent": 23
+    },
+    {
+        "category_id": 324,
+        "name": "أستون مارتن",
+        "parent": 23
+    },
+    {
+        "category_id": 325,
+        "name": "بنتلي",
+        "parent": 23
+    },
+    {
+        "category_id": 326,
+        "name": "بوجاتي",
+        "parent": 23
+    },
+    {
+        "category_id": 327,
+        "name": "بويك",
+        "parent": 23
+    },
+    {
+        "category_id": 328,
+        "name": "كاديلاك",
+        "parent": 23
+    },
+    {
+        "category_id": 329,
+        "name": "شانا",
+        "parent": 23
+    },
+    {
+        "category_id": 330,
+        "name": "فاو",
+        "parent": 23
+    },
+    {
+        "category_id": 331,
+        "name": "فيراري",
+        "parent": 23
+    },
+    {
+        "category_id": 332,
+        "name": "جريت وول",
+        "parent": 23
+    },
+    {
+        "category_id": 333,
+        "name": "إنفينيتي",
+        "parent": 23
+    },
+    {
+        "category_id": 334,
+        "name": "لامبورغيني",
+        "parent": 23
+    },
+    {
+        "category_id": 335,
+        "name": "لكزس",
+        "parent": 23
+    },
+    {
+        "category_id": 336,
+        "name": "ليفان",
+        "parent": 23
+    },
+    {
+        "category_id": 337,
+        "name": "لينكولن",
+        "parent": 23
+    },
+    {
+        "category_id": 338,
+        "name": "مازيراتي",
+        "parent": 23
+    },
+    {
+        "category_id": 339,
+        "name": "تسلا",
+        "parent": 23
+    },
+    {
+        "category_id": 340,
+        "name": "Zotye",
+        "parent": 23
+    },
+    {
+        "category_id": 341,
+        "name": "تشانغهي",
+        "parent": 23
+    },
+    {
+        "category_id": 342,
+        "name": "رعاية الطفل وparent",
+        "parent": 223
+    },
+    {
+        "category_id": 343,
+        "name": "أدوات تغذية الأطفال",
+        "parent": 223
+    },
+    {
+        "category_id": 344,
+        "name": "الملحقات - منتجات العناية بالحيوانات الأليفة",
+        "parent": 14
+    },
+    {
+        "category_id": 345,
+        "name": "ألعاب الورق - لوحة",
+        "parent": 230
+    },
+    {
+        "category_id": 346,
+        "name": "الزراعة",
+        "parent": 17
+    },
+    {
+        "category_id": 347,
+        "name": "أثاث ومعدات المكاتب",
+        "parent": 17
+    },
+    {
+        "category_id": 348,
+        "name": "الحمام",
+        "parent": 6
+    },
+    {
+        "category_id": 349,
+        "name": "غرفة الطعام",
+        "parent": 6
+    },
+    {
+        "category_id": 350,
+        "name": "غرفة المعيشة",
+        "parent": 6
+    },
+    {
+        "category_id": 351,
+        "name": "خدمة العملاء ومركز الاتصال",
+        "parent": 100
+    },
+    {
+        "category_id": 352,
+        "name": "عمال وتقنيون",
+        "parent": 100
+    },
+    {
+        "category_id": 353,
+        "name": "Drivers & Delivery",
+        "parent": 100
+    },
+    {
+        "category_id": 354,
+        "name": "الحراس وparentن",
+        "parent": 100
+    },
+    {
+        "category_id": 355,
+        "name": "قانوني - محامون",
+        "parent": 100
+    },
+    {
+        "category_id": 367,
+        "name": "أرقام الجوال",
+        "parent": 147
+    },
+    {
+        "category_id": 368,
+        "name": "طبي",
+        "parent": 241
+    },
+    {
+        "category_id": 369,
+        "name": "قطع غيار السيارات",
+        "parent": 129
+    },
+    {
+        "category_id": 370,
+        "name": "ألفا روميو",
+        "parent": 369
+    },
+    {
+        "category_id": 371,
+        "name": "أستون مارتن",
+        "parent": 369
+    },
+    {
+        "category_id": 372,
+        "name": "أودي",
+        "parent": 369
+    },
+    {
+        "category_id": 373,
+        "name": "بنتلey ",
+        "parent": 369
+    },
+    {
+        "category_id": 374,
+        "name": "BMW",
+        "parent": 369
+    },
+    {
+        "category_id": 375,
+        "name": "بريليانس",
+        "parent": 369
+    },
+    {
+        "category_id": 376,
+        "name": "بوجاتي",
+        "parent": 369
+    },
+    {
+        "category_id": 377,
+        "name": "بويك",
+        "parent": 369
+    },
+    {
+        "category_id": 378,
+        "name": "BYD",
+        "parent": 369
+    },
+    {
+        "category_id": 379,
+        "name": "كاديلاك",
+        "parent": 369
+    },
+    {
+        "category_id": 380,
+        "name": "شانا",
+        "parent": 369
+    },
+    {
+        "category_id": 381,
+        "name": "شانجان",
+        "parent": 369
+    },
+    {
+        "category_id": 382,
+        "name": "تشانغهي",
+        "parent": 369
+    },
+    {
+        "category_id": 383,
+        "name": "شيري",
+        "parent": 369
+    },
+    {
+        "category_id": 384,
+        "name": "شيفروليه",
+        "parent": 369
+    },
+    {
+        "category_id": 385,
+        "name": "كرايسلر",
+        "parent": 369
+    },
+    {
+        "category_id": 386,
+        "name": "سيتروين",
+        "parent": 369
+    },
+    {
+        "category_id": 387,
+        "name": "دايو",
+        "parent": 369
+    },
+    {
+        "category_id": 388,
+        "name": "دايهاتسو",
+        "parent": 369
+    },
+    {
+        "category_id": 389,
+        "name": "دودج",
+        "parent": 369
+    },
+    {
+        "category_id": 390,
+        "name": "فاو",
+        "parent": 369
+    },
+    {
+        "category_id": 391,
+        "name": "فيراري",
+        "parent": 369
+    },
+    {
+        "category_id": 392,
+        "name": "فيات",
+        "parent": 369
+    },
+    {
+        "category_id": 393,
+        "name": "فورد",
+        "parent": 369
+    },
+    {
+        "category_id": 394,
+        "name": "جيلي",
+        "parent": 369
+    },
+    {
+        "category_id": 395,
+        "name": "جريت وول",
+        "parent": 369
+    },
+    {
+        "category_id": 396,
+        "name": "هوندا",
+        "parent": 369
+    },
+    {
+        "category_id": 397,
+        "name": "هامر",
+        "parent": 369
+    },
+    {
+        "category_id": 398,
+        "name": "هيونداي",
+        "parent": 369
+    },
+    {
+        "category_id": 399,
+        "name": "إنفينيتي",
+        "parent": 369
+    },
+    {
+        "category_id": 400,
+        "name": "إيسوزو",
+        "parent": 369
+    },
+    {
+        "category_id": 401,
+        "name": "جاك",
+        "parent": 369
+    },
+    {
+        "category_id": 402,
+        "name": "Jaguar",
+        "parent": 369
+    },
+    {
+        "category_id": 403,
+        "name": "جيب",
+        "parent": 369
+    },
+    {
+        "category_id": 404,
+        "name": "كيا",
+        "parent": 369
+    },
+    {
+        "category_id": 405,
+        "name": "لادا",
+        "parent": 369
+    },
+    {
+        "category_id": 406,
+        "name": "لامبورغيني",
+        "parent": 369
+    },
+    {
+        "category_id": 407,
+        "name": "لانسيا",
+        "parent": 369
+    },
+    {
+        "category_id": 408,
+        "name": "لاند روفر",
+        "parent": 369
+    },
+    {
+        "category_id": 409,
+        "name": "لكزس",
+        "parent": 369
+    },
+    {
+        "category_id": 410,
+        "name": "ليفان",
+        "parent": 369
+    },
+    {
+        "category_id": 411,
+        "name": "لينكولن",
+        "parent": 369
+    },
+    {
+        "category_id": 412,
+        "name": "مازيراتي",
+        "parent": 369
+    },
+    {
+        "category_id": 413,
+        "name": "مازدا",
+        "parent": 369
+    },
+    {
+        "category_id": 414,
+        "name": "مرسيدس بنز",
+        "parent": 369
+    },
+    {
+        "category_id": 415,
+        "name": "MG",
+        "parent": 369
+    },
+    {
+        "category_id": 416,
+        "name": "MINI",
+        "parent": 369
+    },
+    {
+        "category_id": 417,
+        "name": "ميتسوبيشي",
+        "parent": 369
+    },
+    {
+        "category_id": 418,
+        "name": "نيسان",
+        "parent": 369
+    },
+    {
+        "category_id": 419,
+        "name": "أوبل",
+        "parent": 369
+    },
+    {
+        "category_id": 420,
+        "name": "بيجو",
+        "parent": 369
+    },
+    {
+        "category_id": 421,
+        "name": "بورش",
+        "parent": 369
+    },
+    {
+        "category_id": 422,
+        "name": "بروتون",
+        "parent": 369
+    },
+    {
+        "category_id": 423,
+        "name": "رينو",
+        "parent": 369
+    },
+    {
+        "category_id": 424,
+        "name": "Saipa",
+        "parent": 369
+    },
+    {
+        "category_id": 425,
+        "name": "المقعد",
+        "parent": 369
+    },
+    {
+        "category_id": 426,
+        "name": "سينوفا",
+        "parent": 369
+    },
+    {
+        "category_id": 427,
+        "name": "سكودا",
+        "parent": 369
+    },
+    {
+        "category_id": 428,
+        "name": "سبيرانزا",
+        "parent": 369
+    },
+    {
+        "category_id": 429,
+        "name": "سانغ يونغ",
+        "parent": 369
+    },
+    {
+        "category_id": 430,
+        "name": "سوبارو",
+        "parent": 369
+    },
+    {
+        "category_id": 431,
+        "name": "سوزوكي",
+        "parent": 369
+    },
+    {
+        "category_id": 432,
+        "name": "تسلا",
+        "parent": 369
+    },
+    {
+        "category_id": 433,
+        "name": "تويوتا",
+        "parent": 369
+    },
+    {
+        "category_id": 434,
+        "name": "فولكس فاجن",
+        "parent": 369
+    },
+    {
+        "category_id": 435,
+        "name": "فولفو",
+        "parent": 369
+    },
+    {
+        "category_id": 436,
+        "name": "زوتيا",
+        "parent": 369
+    }
+]
