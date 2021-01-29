@@ -83,12 +83,12 @@
 
     },
     "footer": {
-        "message": "تم عمل هذا الموقع",
-        "by": "By MSHZIDAN"
+        "message": "By MSHZIDAN   © 2020",
+        "by": ""
     },
     "home": {
         "notFound": "لا يوجد",
-        "egp": "جنيه",
+        "egp": "EGP",
         "date": "التاريخ",
         "location": "العنوان"
     },
@@ -153,7 +153,7 @@
     },
     "userAds": {
         "adId": "رقم الاعلان",
-        "Date": "التاريخ",
+        "date": "التاريخ",
         "title": "العنوان",
         "price": "السعر",
         "chat": "الشات",

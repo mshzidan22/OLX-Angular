@@ -82,8 +82,8 @@
 
     },
     "footer": {
-        "message": "This is MVP For OLX WebSite",
-        "by": "By MSHZIDAN"
+        "message": "By MSHZIDAN   © 2020",
+        "by": ""
     },
     "home": {
         "notFound": "Not Found",
@@ -152,7 +152,7 @@
     },
     "userAds": {
         "adId": "AD Id",
-        "Date": "Date",
+        "date": "Date",
         "title": "Title",
         "price": "Price",
         "chat": "Chat",
